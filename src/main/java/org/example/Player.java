@@ -5,23 +5,30 @@ public class Player {
     private String name;
     private int strength;
 
+    public Player(int id, String name, int strength) {
+        this.id = id;
+        this.name = name;
+        this.strength = strength;
+    }
+
     public int getId() {
         return id;
     }
 
-    public void setTitle(String name){
+    public void setName(String name){
         this.name = name;
     }
 
-    public String getTitle() {
+    public String getName() {
         return name;
     }
 
-    public void setPrice(int strength){
+    public void setStrength(int strength){
         this.strength = strength;
     }
 
-    public int getPrice() {
+    public int getStrength() {
         return strength;
     }
+
 }
