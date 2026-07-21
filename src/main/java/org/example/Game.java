@@ -2,6 +2,7 @@ package org.example;
 
 import java.util.ArrayList;
 import java.util.HashSet;
+import java.util.Objects;
 import java.util.Set;
 
 public class Game {
@@ -24,7 +25,7 @@ public class Game {
 
     public Player findByName(String plName) {
         for (Player player: players){
-            if (player.getName() == plName) {
+            if (Objects.equals(player.getName(), plName)) {
                 return player;
             }
         }
